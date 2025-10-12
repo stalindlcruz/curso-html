@@ -67,6 +67,34 @@
       </nav>
     </header>
 
+    <dialog id="dialog">
+      <h1>Sabías que puedes abrir una modal así?</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum qui
+        repellendus neque odit impedit, quas inventore fugit reprehenderit
+        exercitationem quia tempore sed earum excepturi. Facilis, ut? Velit
+        harum quam blanditiis.
+      </p>
+      <button id="hide">Cerrar modal</button>
+    </dialog>
+
+    <button id="show">Ver más información</button>
+
+    <script>
+      window.show.addEventListener("click", () => {
+        window.dialog.showModal();
+      });
+
+      window.hide.addEventListener("click", () => {
+        window.dialog.close();
+      });
+    </script>
+
+    <!-- <audio controls src=""></audio>
+    <video controls src=""></video> -->
+    <!-- <video muted autoplay src=""></video>
+    <video loop poster="" src=""></video> -->
+
     <main>
       <p>
         +15 años de experiencia como <strong>Ingeniero de Software</strong>.
@@ -118,7 +146,24 @@
       <section>
         <article>
           <header>
-            <h4>Sitio Web Corporativo</h4>
+            <h4>La página de Tesla</h4>
+            <iframe
+              style="width: 100%; aspect-ratio: 16/9"
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/3nYLTiY5skU?si=sV5IXyWBmOMC7uQv"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+            <!-- <img
+              style="width: 100%; aspect-ratio: 638/317;"
+              loading="lazy"
+              src="./capture_tesla.png"
+              alt="Captura de pantalla de la página web de tesla"
+            /> -->
           </header>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
